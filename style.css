@@ -1,0 +1,254 @@
+body{
+    /* display:flex;
+    justify-content: center;
+    align-items:center; */
+    /* height:100vh; */
+    margin:0;
+    /* background-color: rgb(142, 218, 193); */
+    /* font-family: 'Gluten', cursive; */
+    /* background-image: url(https://source.unsplash.com/1600x900/?landscape); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.columns {
+    display:block;
+    overflow:auto;
+    padding:1rem;
+    padding-top:1rem;
+}
+
+.weather-card{
+    background: linear-gradient(0deg, rgba(149,230,200,1) 0%, rgba(0,139,89,1) 45%);
+    color:white;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 15px 2px #000000;
+}
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-top:1rem; */
+}
+.search-bar{
+    padding:20px;
+    margin:20px;
+    width:100%;
+}
+
+.title-inspo{
+    text-align:center;
+    margin: 1rem;
+    color:#009A63;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:40px;
+}
+
+.search-btn{
+    padding:0 1rem;
+    border-radius:5px;
+    border:none;
+    height:2.8rem;
+    width:5rem;
+    outline: none;
+    color: white;
+    background: rgba(250,87,38,1);
+    cursor:pointer;
+    transition:0.2s ease-in-out;
+    box-shadow: 2px 2px #535353;
+}
+
+button :hover{
+    background: #7c7c7c6b;
+}
+
+input{
+    border:none;
+    outline:none;
+    padding:0.7em;
+    border-radius:5px;
+    background:#7c;
+    font-family:inherit;
+    font-size:120%;
+    width: calc(100% - 90px);
+    height:1rem
+}
+
+h1.temp{
+    margin:0;
+    margin-bottom: 0.4em;
+}
+
+.main-title{
+    font-size:40px; 
+    padding:0 0.5rem;
+    margin:1rem;
+    font-weight:bold;
+}
+.title-desc{
+    font-size:20px;
+    padding:0 3rem;
+    color:white;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.humidity {
+    padding-bottom:0.5em;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height:20px;
+    position:relative;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Enter a city..."; 
+    color:white; 
+    position:absolute;
+    top:0;
+    left:20px;
+}
+
+.city{
+    padding:1rem;
+}
+.cityPhoto img{
+    display:flex;
+    justify-content:center;
+    margin:auto;
+    max-width:100%;
+    height:auto;
+    object-fit:cover;
+    padding:5px;
+}
+
+.videoThumb {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0 10px;
+    
+}
+
+.videoThumb img{
+    height:200px;
+    /* border-radius:10px; */
+    /* box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); */
+}
+
+.video-title {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    max-width:266.6px;
+    height:auto;
+    background-color: white;
+    padding:10px;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    border:1px solid rgb(192, 191, 191);  
+    overflow:auto;
+    /* display: none; */
+    /* align-items: flex-end; */
+    /* justify-content: center; */
+    /* align-self: auto; */
+    /* margin-top:5px; */
+}
+
+.mainTitle{
+    color:#009A63;
+    padding:0 30px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-size: 4rem;
+    /* text-shadow: 2px 2px 2px #000000, 2px 2px 2px #807E7E; */
+    display:flex;
+    justify-content:center;
+    margin:auto;
+}
+h1.mainTitle{
+    font-size:70px;
+    color:rgba(250,87,38,1);
+    font-weight:bold;
+    text-shadow: 3px 2px rgb(143, 139, 139);
+}
+.yt-container-title{
+    text-align:center;
+    color:#009A63;
+    padding: 30px;
+    /* text-shadow: 2px 2px 2px #807E7E; */
+}
+
+#yt-container{
+    display:block;
+    background-color:white;
+    
+}
+
+#yt-video-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.first-column{
+    z-index: 1;
+}
+.second-column{
+    background-color:white;
+    justify-content: center;
+    text-align: center;
+}
+
+.results__item{
+    text-align: left;
+    margin:1rem;
+    padding:1rem;
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration:none!important;
+}
+.results__item:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.results__item__title {
+    color:#696868;
+    text-align:center;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    margin: 20px;
+    text-decoration:none!important;
+}
+.results__item__intro {
+
+    color:#6d6d6d;
+    margin: 0 20px;
+    padding-bottom: 20px;
+}
+
+
+.results__error {
+    color: #ef0000;
+}
+a {
+    color: #807E7E;
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration:none;
+}
