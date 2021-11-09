@@ -5,7 +5,7 @@ let weather = {
     fetchWeather: function (city) {
         fetch(
             //  Enable API back  once finished:
-            "http://api.openweathermap.org/data/2.5/weather?q="
+            "https://api.openweathermap.org/data/2.5/weather?q="
             + city 
             + "&units=metric&appid=" 
             + this.apiKey
@@ -153,7 +153,7 @@ function execute() {
                     output += `
                         <div class="videoThumb">
                         <a data-fancybox href="https://www.youtube.com/watch?v=${videoId}">
-                        <img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" />
+                        <img src="https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" />
                         </a>
                         <p class="video-title">${videoTitle}</p>
                         </div>
